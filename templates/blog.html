@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>blog</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='blog.css')}}"/>
+  </head>
+  <body>
+    <!-- This is the reference http://thomasvaeth.com/trophy/, I am not the original author. -->
+<main>
+    <section class="previews">
+      <div>
+        <figure class="absolute-bg preview__img" style="background-image: url('.vscode/Prescription image1.jpg');"></figure>
+        <figure class="absolute-bg preview__img" style="background-image: url('.vscode/label image.jpg');"></figure>
+        <figure class="absolute-bg preview__img" style="background-image: url('.vscode/Active Ingredients image.jpg');"></figure>
+        <figure class="absolute-bg preview__img" style="background-image: url('.vscode/Check for Allergies image.jpg');"></figure>
+        <figure class="absolute-bg preview__img" style="background-image: url('.vscode/Avoid Interactions image.jpg');"></figure>
+        <figure class="absolute-bg preview__img" style="background-image: url('.vscode/Take with Water image.jpg');"></figure>    
+        <figure class="absolute-bg preview__img" style="background-image: 'https://i.pinimg.com/564x/09/63/23/096323d6fba01d28141927cf92478d8f.jpg';"></figure>
+        <figure class="absolute-bg preview__img" style="background-image: url('.vscode/store medications image.jpg');"></figure>
+        <figure class="absolute-bg preview__img" style="background-image: url('.vscode/medication image.jpg');"></figure>
+        <figure class="absolute-bg preview__img" style="background-image: url('.vscode/side effects image.jpg');"></figure>
+        <figure class="absolute-bg preview__img" style="background-image: url('.vscode/avoid alcohol image.jpg');"></figure>
+        <div class="previews__container">
+          <span>Welcome to</span>
+          <h1>MEDPLUS</h1>
+        </div>
+      </div>
+  
+      <div>
+        <header>
+          <ul class="tabs">
+            <form action="/home">
+            <button class="tabs__item">Home</button>
+          </form>
+          </ul>
+        </header>
+        <div class="tab">
+          <ul itemscope itemtype="http://schema.org/Blog">    
+            <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+              <a class="preview__link" href="#" itemprop="url">
+                <span class="preview__date" itemprop="datePublished" datetime="2016-09-08T00:00:00-07:00"></span>
+                <h2 class="preview__header" itemprop="name">Follow the Prescription</h2>
+                <p class="preview__excerpt" itemprop="description"><span class="preview__more">Always take the medicine exactly as prescribed by your healthcare provider. Do not alter the dosage or schedule without consulting them..</span></p>
+                
+              </a>
+            </li>
+            <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+              <a class="preview__link" href="#" itemprop="url">
+                <span class="preview__date" itemprop="datePublished" datetime="2016-09-07T00:00:00-07:00"></span>
+                <h2 class="preview__header" itemprop="name">Read the Label</h2>
+                <p class="preview__excerpt" itemprop="description"><span class="preview__more">Carefully read the medication label and any accompanying information to understand how to take it correctly.</span></p>
+              </a>
+            </li>   
+            <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+              <a class="preview__link" href="#" itemprop="url">
+                <span class="preview__date" itemprop="datePublished" datetime="2016-09-06T00:00:00-07:00"></span>
+                <h2 class="preview__header" itemprop="name">Know the Active Ingredients</h2>
+                <p class="preview__excerpt" itemprop="description"><span class="preview__more">Be aware of the active ingredients to avoid accidental overdose, especially if taking multiple medications.</span></p>
+                
+              </a>
+            </li>
+            <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+              <a class="preview__link" href="#" itemprop="url">
+                <span class="preview__date" itemprop="datePublished" datetime="2016-09-05T00:00:00-07:00"></span>
+                <h2 class="preview__header" itemprop="name">Check for Allergies</h2>
+                <p class="preview__excerpt" itemprop="description"><span class="preview__more">Ensure you are not allergic to any ingredients in the medication. If you are unsure, consult your healthcare provider.</span>
+                </p>
+                
+              </a>
+            </li>     
+            <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+              <a class="preview__link" href="#" itemprop="url">
+                <span class="preview__date" itemprop="datePublished" datetime="2016-09-04T00:00:00-07:00"></span>
+                <h2 class="preview__header" itemprop="name">Avoid Interactions</h2>
+                <p class="preview__excerpt" itemprop="description"><span class="preview__more">Be mindful of potential interactions with other medications, supplements, or foods. Inform your healthcare provider about all other substances you are taking.</span></p>
+              
+            </a>
+          </li>
+          <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <a class="preview__link" href="#" itemprop="url">
+              <span class="preview__date" itemprop="datePublished" datetime="2016-09-08T00:00:00-07:00"></span>
+              <h2 class="preview__header" itemprop="name">Take with Water</h2>
+              <p class="preview__excerpt" itemprop="description"><span class="preview__more">Most medications should be taken with a full glass of water unless instructed otherwise.</span></p>
+              
+            </a>
+          </li>
+          <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <a class="preview__link" href="#" itemprop="url">
+              <span class="preview__date" itemprop="datePublished" datetime="2016-09-08T00:00:00-07:00"></span>
+              <h2 class="preview__header" itemprop="name">Timing Matters</h2>
+              <p class="preview__excerpt" itemprop="description"><span class="preview__more">Follow specific timing instructions, such as taking the medication with food, on an empty stomach, or at a particular time of day.</span></p>
+              
+            </a>
+          </li>
+          <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <a class="preview__link" href="#" itemprop="url">
+              <span class="preview__date" itemprop="datePublished" datetime="2016-09-08T00:00:00-07:00"></span>
+              <h2 class="preview__header" itemprop="name">Storage Instructions</h2>
+              <p class="preview__excerpt" itemprop="description"><span class="preview__more">Store medications as directed, usually in a cool, dry place. Some may require refrigeration.</span></p>
+             
+            </a>
+          </li>
+          <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <a class="preview__link" href="#" itemprop="url">
+              <span class="preview__date" itemprop="datePublished" datetime="2016-09-08T00:00:00-07:00"></span>
+              <h2 class="preview__header" itemprop="name">Do Not Share Medication</h2>
+              <p class="preview__excerpt" itemprop="description"> <span class="preview__more">Never share your medication with others, even if they have similar symptoms.</span></p>
+            </a>
+          </li>
+          <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <a class="preview__link" href="#" itemprop="url">
+              <span class="preview__date" itemprop="datePublished" datetime="2016-09-08T00:00:00-07:00"></span>
+              <h2 class="preview__header" itemprop="name">Monitor for Side Effects</h2>
+              <p class="preview__excerpt" itemprop="description"><span class="preview__more">Be aware of common side effects and seek medical advice if you experience any unusual or severe reactions.</span></p>
+              
+            </a>
+          </li>
+          <li class="preview" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+            <a class="preview__link" href="#" itemprop="url">
+              <span class="preview__date" itemprop="datePublished" datetime="2016-09-08T00:00:00-07:00"></span>
+              <h2 class="preview__header" itemprop="name">Avoid Alcohol</h2>
+              <p class="preview__excerpt" itemprop="description"><span class="preview__more">Many medications interact negatively with alcohol, so it is generally best to avoid it unless otherwise advised by your healthcare provider.</span></p>
+              
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      
+    </section>
+  </main> 
+
+  </body>
+</html>

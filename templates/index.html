@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MacBook Air - 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+    <style>
+      body {
+        background-image: url('https://www.verywellhealth.com/thmb/JA2aeqlRra4nIu-rXfiLVRcTW14=/6048x4032/filters:fill(87E3EF,1)/medicine-pills-463594335-ba46b2f34a764be6a9c0e56a308cb938.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: cover;
+      }
+      </style>
+  </head>
+  <!-- <body style="background-image:url('https://www.verywellhealth.com/thmb/JA2aeqlRra4nIu-rXfiLVRcTW14=/6048x4032/filters:fill(87E3EF,1)/medicine-pills-463594335-ba46b2f34a764be6a9c0e56a308cb938.jpg');"> -->
+  <!-- <img src="https://www.verywellhealth.com/thmb/JA2aeqlRra4nIu-rXfiLVRcTW14=/6048x4032/filters:fill(87E3EF,1)/medicine-pills-463594335-ba46b2f34a764be6a9c0e56a308cb938.jpg" class="backimage"> -->
+    <div class="mac-book-air-2">
+      <div class="container-1">
+          <img src="https://i.pinimg.com/736x/be/18/90/be18908825a6de8e36cc1407b7790e36.jpg" width="185px" height="130px" >
+        <div class="group-2">
+          <form action="/blogpage">
+            <button class="custom-btn btn-16"><span>BLOG</span></button>
+          </form>
+          
+          <!-- <a href="https://www.w3schools.com/tags/att_button_formaction.asp">
+          <button class="custom-btn btn-16"><span>BLOG</span></button>
+          </a> -->
+        </div>
+      </div>
+      <div class="container">
+        <div class="drug-wallapaper-1">
+          <div class="group-4">
+            <form action="/analyze" method="post">
+              <label for="drug_name">Enter Drug Name:</label>
+              <div id="search">
+                <svg viewBox="0 0 420 60" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="bar"/>
+                    
+                    
+                    <g class="magnifier">
+                        <circle class="glass"/>
+                        <line class="handle" x1="32" y1="32" x2="44" y2="44"></line>
+                    </g>
+            
+                    <g class="sparks">
+                        <circle class="spark"/>
+                        <circle class="spark"/>
+                        <circle class="spark"/>
+                    </g>
+            
+                    <g class="burst pattern-one">
+                        <circle class="particle circle"/>
+                        <path class="particle triangle"/>
+                        <circle class="particle circle"/>
+                        <path class="particle plus"/>
+                        <rect class="particle rect"/>
+                        <path class="particle triangle"/>
+                    </g>
+                    <g class="burst pattern-two">
+                        <path class="particle plus"/>
+                        <circle class="particle circle"/>
+                        <path class="particle triangle"/>
+                        <rect class="particle rect"/>
+                        <circle class="particle circle"/>
+                        <path class="particle plus"/>
+                    </g>
+                    <g class="burst pattern-three">
+                        <circle class="particle circle"/>
+                        <rect class="particle rect"/>
+                        <path class="particle plus"/>
+                        <path class="particle triangle"/>
+                        <rect class="particle rect"/>
+                        <path class="particle plus"/>
+                    </g>
+                </svg>
+                <input type="search" id="drug_name" name="drug_name" required>
+                <!-- <form action="/analyze" method="post">
+                    <label for="drug_name">Enter Drug Name:</label>
+                    <input type="text" id="drug_name" name="drug_name" required>
+                    
+                </form> -->
+                <button type="submit" id="formBtn">Analyze</button>
+              </div>
+            </form>
+                    <!-- <label for="drug_name">Enter Drug Name:</label>
+                    <input type="text" id="drug_name" name="drug_name" required>
+                    <button type="submit">Analyze</button>
+                </form> -->
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html> 

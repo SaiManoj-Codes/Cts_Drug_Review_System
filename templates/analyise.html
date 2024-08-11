@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>blog</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='analyise.css') }}">
+  </head>
+  <body style="overflow: auto;min-height:100vh;">
+    <div class="wrapper">
+        <div class="main">
+        <h1 style="text-align: center;">medicine name</h1>
+        <div class="center_content" style="margin-top: 200px;">
+          <p>{{ results.sentiment }}</p>
+          <!-- <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+          <canvas id="sentimentChart" width="400" height="200"></canvas> -->
+          <!img src="url('/static/images/my_plot.png')">
+          <img src="{{ url_for('static', filename='my_plot.png') }}">
+        </div>                    
+        </div>
+        
+        <div class="sidebar left" >
+          <form action="/home">
+            <button class="custom-btn btn-3"><span>Home</span></button>
+          </form>
+            <div class="left_content" style="margin-top: 180px;">
+            <h3>Left Sidebar</h3>
+            <p>{{ results.review_summary }}</p>
+            
+            </div>          
+        </div>
+        
+        <div class="sidebar right">
+            <form action="https://forms.gle/gSY5NcXNSaD4MG4M8">
+            <button class="custom-btn btn-3"><span>Feedback</span></button>
+          </form>
+            <div class="right_content" style="margin-top: 180px;">
+            <h3>Right Sidebar</h3>
+            <p>{{ results.side_effects}}</p>
+      
+                </div>         
+        </div>
+    
+    </div> <!-- end .wrapper -->
+    <!-- {% if results %}
+      <h2>Analysis Results</h2>
+      <h3>Review Summary:</h3>
+      
+      <h3>Sentiment:</h3>
+      
+      <h3>Side Effects:</h3>
+      
+      {% endif %} -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+      </script>
+  </body>
+</html>

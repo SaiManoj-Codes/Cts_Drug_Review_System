@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Rosario);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:700,400);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.preload * {
+    transition: none !important;
+}
+
+html {
+    min-height: 100%;
+    height: 100%;
+}
+
+body,
+.wrapper{
+    height: 100%;
+   
+    font-family: Rosario, arial, sans-serif;
+}
+
+
+h1, h2, h3 {
+    font-family: "Merriweather Sans", arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: -.05em;
+}
+
+.main, .sidebar {
+    position: relative;
+    padding: 2em;
+    float: left;
+}
+
+.main {
+    position: relative;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    width: 50%;
+    background: #f3f1ef;
+    margin-left: 25%;
+
+}
+
+.sidebar {    
+    position: relative;
+    width: 25%;
+    background: #a39485;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.sidebar.left {
+    margin-left: -75%;  
+}
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-3 {
+    background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: rgba(2,126,251,1);
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+  
+
+
+.sidebar.right {
+    float: right;    
+    min-height: 100vh;        
+}
+
+.btn {
+    position: absolute;
+  display: none;
+    top: .5em;
+    padding: 1em 1em 1em 1.2em;
+    width: auto;
+    line-height: 1;
+    text-decoration: none;
+    color: #004f97;
+}
+
+.btn span {
+    display: block;
+    position: absolute;
+    left: .1em;
+    top: 5px;
+    font-size: 2.5em;
+    line-height: .5; 
+}  
+
+.btn.right span {
+    left: auto;
+    right: 0;
+} 
+
+.btn.left {
+    left: 1.5em;
+}
+
+.btn.right {
+    right: 1.5em;
+    padding-right: 1.2em;
+    padding-left: 1em;
+}
+
+@media all and (max-width: 750px) {
+
+    .main, .sidebar {
+        padding: 3.5em 2em;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .main {
+        position: relative;
+        width: 100%;
+        float: none;
+        right: 0;
+        margin: 0;
+        transition: .5s left ease, .5s right ease;  
+        box-shadow: 0 0 10px rgba(0,0,0,.5) ; 
+        z-index: 5 ;    
+    }
+
+    .right .main, .right .sidebar.left {
+        right: 16em;
+        left: auto;
+    }
+
+    .left .main, .left .sidebar.right {
+        left: 16em;
+        right: auto;
+    }
+
+    .sidebar{
+        position: absolute;
+        float: none;
+        width: 16em;
+        height: 100%;
+        margin: 0;
+        right: 0;
+        top: 0;   
+        z-index: 1;   
+        transition:  .5s right ease, .5s left ease;        
+    }
+
+    .sidebar.left {
+        left: 0;
+        right: auto;
+        margin-left: 0;
+    }
+
+}

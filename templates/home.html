@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h2>Welcome {{ username }}!</h2>
+    <a href="{{ url_for('logout') }}">Logout</a>
+    {% if results %}
+      <h2>Analysis Results</h2>
+      <h3>Review Summary:</h3>
+      <p>{{ results.review_summary }}</p>
+      <h3>Sentiment:</h3>
+      <p>{{ results.sentiment }}</p>
+      <h3>Side Effects:</h3>
+      <p>{{ results.side_effects | safe }}</p>
+      {% endif %}
+</body>
+</html>

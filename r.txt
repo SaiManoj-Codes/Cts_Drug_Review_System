@@ -1,0 +1,9 @@
+threading
+pymongo 
+requests
+bs4 
+transformers 
+flask
+os
+google-generativeai 
+pandas
