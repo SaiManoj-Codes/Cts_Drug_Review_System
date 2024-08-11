@@ -13,8 +13,6 @@ import google.generativeai as gemini
 from viz import create_sentiment_bar_chart
 
 
-
-load_dotenv()
 client = MongoClient("mongodb+srv://vedesh:Vedeshsb003%40@user.8fwgqcw.mongodb.net/?retryWrites=true&w=majority&appName=user")
 db = client.get_database('CTS_Hackathon')
 users_collection = db.get_collection('User_Info')
