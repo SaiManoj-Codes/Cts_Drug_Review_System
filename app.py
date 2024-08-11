@@ -9,7 +9,6 @@ from transformers import BartForConditionalGeneration, BartTokenizer
 import string
 from flask import Flask, render_template, request, redirect, url_for, session
 import os
-from dotenv import load_dotenv
 import google.generativeai as gemini
 from viz import create_sentiment_bar_chart
 
