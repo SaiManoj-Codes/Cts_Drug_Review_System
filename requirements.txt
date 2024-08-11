@@ -1,10 +1,8 @@
-threading
-pymongo 
+Flask
 requests
-bs4 
-transformers 
-flask
-os
-google-generativeai 
+beautifulsoup4
+pymongo
+transformers
+torch
+google-generativeai
 gunicorn
-pandas
