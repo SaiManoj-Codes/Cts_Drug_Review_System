@@ -6,4 +6,5 @@ transformers
 flask
 os
 google-generativeai 
+gunicorn
 pandas
