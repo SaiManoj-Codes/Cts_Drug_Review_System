@@ -24,7 +24,7 @@ def get_sentiment_analyzer():
     return pipeline('sentiment-analysis', model=model, tokenizer=tokenizer)
 
 def genai(initial, a):
-    gemini.configure(api_key='AIzaSyAamNc1vBJWyGIibImjN23KLxg9Wr6Zns0')
+    gemini.configure(api_key='AIzaSyAVBL0FgeJYEIu_WEPIfhWtgg7Q759DHyA')
     model = gemini.GenerativeModel('gemini-1.5-pro-latest')
     try:
         chat = model.start_chat(history=[])
