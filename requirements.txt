@@ -6,3 +6,4 @@ transformers
 google-generativeai
 gunicorn
 pandas
+torch
