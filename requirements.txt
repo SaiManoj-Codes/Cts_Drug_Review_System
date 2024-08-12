@@ -1,8 +1,8 @@
-Flask
+flask
 requests
-beautifulsoup4
+bs4
 pymongo
 transformers
-torch
 google-generativeai
 gunicorn
+pandas
